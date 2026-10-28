@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body
+    style="
+      font-family:
+        Noto Sans,
+        system-ui,
+        sans-serif;
+      height: 100vh;
+      background-image: url(pexels-codioful-7135053.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0px;
+    ">
+    <div
+      class="window"
+      id="welcome"
+      style="top: calc(50% - 90px); left: calc(50% - 180px)">
+      <div class="windowheader" id="welcomeheader">
+        <div class="closebutton" id="welcomeclose"></div>
+
+        <p class="headertext">Welcome</p>
+        <div style="width: 16px; margin-right: 6x; height: 16px"></div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          margin: 6px;
+          border-radius: 12px;
+          width: 360px;
+          padding: 16px;
+        ">
+        <img
+          src="blue sky.avif"
+          style="
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            object-fit: cover;
+          " />
+        <h1 style="margin: 4px">nevaOS</h1>
+        <p style="margin: 0px">
+          <dfn>NevaOS</dfn> is a feature-limited
+          <abbr title="Operating System">OS</abbr> to answer the <br />
+          unanswerable question of <code>"who is Neva?"</code>
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="top"
+      style="
+        position: absolute;
+        width: 100%;
+        display: flex;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.125);
+        color: #fff;
+        justify-content: space-between;
+        gap: 32px;
+      ">
+      <p
+        id="welcomeopen"
+        style="
+          margin-left: 16px;
+          font-weight: 700;
+          background-color: rgba(256, 256, 256, 0.125);
+          padding: 4px 12px;
+          border-radius: 16px;
+          cursor: pointer;
+        ">
+        NevaOS
+      </p>
+      <p
+        style="
+          margin-left: 16px;
+          background-color: rgba(256, 256, 256, 0.25);
+          padding: 4px 12px;
+          border-radius: 16px;
+        ">
+        ☀️ Happy mood
+      </p>
+      <p
+        id="timeElement"
+        style="
+          margin-right: 16px;
+          background-color: rgba(256, 256, 256, 0.125);
+          padding: 4px 12px;
+          border-radius: 16px;
+        "></p>
+    </div>
+
+    <div id="desktopApps" style="padding-top: 64px; padding-left: 16px">
+      <div
+        id="notesIcon"
+        style="
+          text-align: center;
+          padding: 16px;
+          filter: drop-shadow(0 0 8px black);
+          width: fit-content;
+          cursor: pointer;
+        ">
+        <img
+          src="artistic-3d-modern-sphere-art.jpg"
+          style="width: 64px; height: 64px; border-radius: 16px" />
+        <p style="margin: 0px; color: #fff">Notes</p>
+      </div>
+      <div
+        id="photoIcon"
+        style="
+          text-align: center;
+          margin: 8px;
+          padding: 8px;
+          filter: drop-shadow(0 0 8px black);
+          width: fit-content;
+          cursor: pointer;
+        ">
+        <img
+          src="gallery.png"
+          style="width: 64px; height: 64px; border-radius: 16px" />
+        <p style="margin: 0px; color: #fff">photo gallery</p>
+      </div>
+    </div>
+
+    <div
+      class="window"
+      id="notes"
+      style="top: calc(50% - 240px); display: none; left: calc(50% - 260px)">
+      <div class="windowheader" id="notesheader">
+        <div class="closebutton" id="notesclose"></div>
+
+        <p class="headertext">Notes</p>
+        <div style="width: 16px; margin-right: 6x; height: 16px"></div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          margin: 6px;
+          border-radius: 12px;
+          width: 520px;
+          height: 480px;
+          padding: 16px;
+          font-family: Courier;
+          display: flex;
+        ">
+        <div
+          id="sidebar"
+          style="
+            background-color: #f9f9f9;
+            width: 520px;
+            margin-right: 16px;
+            padding: 16px;
+            border-radius: 16px;
+          "></div>
+
+        <div id="notesContent" style="overflow-y: scroll"></div>
+      </div>
+    </div>
+
+    <div
+      class="window"
+      id="photo"
+      style="top: calc(50% - 90px); left: calc(50% - 180px); display: none">
+      <div class="windowheader" id="photoheader">
+        <div class="closebutton" id="photoclose"></div>
+
+        <p class="headertext">Photo</p>
+        <div style="width: 16px; margin-right: 6x; height: 16px"></div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          margin: 6px;
+          border-radius: 12px;
+          width: 360px;
+          padding: 16px;
+        ">
+        <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" >
+      <img src="pen.png" alt="Pen">
+    </a>
+    <div class="desc">This is the pen I used to write.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" >
+      <img src="shoppinglist.png" alt="shopping list">
+    </a>
+    <div class="desc">This is my shopping list.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" >
+      <img src="calculator-illustration-design-free-png.webp" alt="Calculator">
+    </a>
+    <div class="desc">This is my calculator</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
