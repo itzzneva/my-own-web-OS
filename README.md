@@ -10,3 +10,5 @@ You must double click an app for it to open.
 Each app has a transparent border. 
 My styling includes a rainbow aesthetic with cute pngs, giving it a overall childlike feelings.
 It is possible to add more than one note in the notepad. 
+There is also a date at the top, along with the name of my OS and the current status of my mood. 
+The background is of a rainbow gradient.
