@@ -6,3 +6,7 @@ There is a clock at the top of the page to track the time.
 The theme is bright and colourful to make it more visually appealing for the person. 
 It has a red button to close each tab.
 There is a border around each app. Each app has a description beneath it so the user knows what they are clicking on.
+You must double click an app for it to open.
+Each app has a transparent border. 
+My styling includes a rainbow aesthetic with cute pngs, giving it a overall childlike feelings.
+It is possible to add more than one note in the notepad. 
